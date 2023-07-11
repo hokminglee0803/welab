@@ -76,8 +76,7 @@ export class AppService {
   }
 
   getQuestion3(n: number): string {
-    const possibleWays = this.countPossibleWays(n);
-    return BigInt(possibleWays).toString();
+    return BigInt(this.countPossibleWays(n)).toString();
   }
 
   private countPossibleWays(n: number): number {
